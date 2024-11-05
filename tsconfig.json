@@ -20,5 +20,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src"]
+  "include": ["src", "dist/NotoSansKR-Regular-normal.js", "NotoSansKR-Regular-normal.js"]
 }

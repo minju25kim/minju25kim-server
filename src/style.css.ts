@@ -22,7 +22,9 @@ export const a4Style = style({
   height: '297mm', 
   margin: '0 auto', 
 });
+
 export const footerStyle = style({
+  // margin: "20px",
   padding: "20px",
   textAlign: "center",
   // backgroundColor: "#f8f8f8",

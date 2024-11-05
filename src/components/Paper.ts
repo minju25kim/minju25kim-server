@@ -1,10 +1,10 @@
 import { a4Style } from "../style.css.ts";
-import en from "../resources/en.json";
-import kr from "../resources/kr.json";
+import en from "../json/en.json";
+import kr from "../json/kr.json";
 
 export function Paper(lang: string): string {
   const data = lang === "en" ? en : kr;
-  
+
   return /*html*/`
     <div id="paper" class="${a4Style}">
       <h2>${data.basics.name}</h2>
@@ -14,11 +14,11 @@ export function Paper(lang: string): string {
       </div>
       <div id="link">
         link
-        ${data.sections.profiles.items.map((item)=>{
-          return `
+        ${data.sections.profiles.items.map((item) => {
+        return `
           <a href=${item.url.href}>${item.network}</a>
           `
-        }).join('')}
+        }).join("")}
       </div>
       <div id="project">project</div>
       <div id="experience">exp</div>

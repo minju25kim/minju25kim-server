@@ -73,3 +73,20 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@media print {
+  body {
+    visibility: hidden;
+  }
+  #paper {
+    box-shadow: none;
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    font-family: Arial, sans-serif; 
+    color: black; 
+    background-color: white; 
+  }
+}
