@@ -1,0 +1,20 @@
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  body {
+    visibility: hidden;
+  }
+
+  #paper {
+    box-shadow: none;
+    visibility: visible;
+    position: absolute;
+    color: black;
+    background-color: white;
+    left: 0;
+    top: 0;
+  }
+}

@@ -65,7 +65,7 @@
           "summary": "",
           "url": {
             "label": "",
-            "href": ""
+            "href": "https://cs.knou.ac.kr/cs1/index.do?epTicket=LOG"
           }
         },
         {
@@ -79,7 +79,21 @@
           "summary": "",
           "url": {
             "label": "",
-            "href": ""
+            "href": "https://www.foundersandcoders.com/"
+          }
+        },
+        {
+          "id": "random_id",
+          "visible": true,
+          "institution": "충북대학교",
+          "studyType": "학사",
+          "area": "도시공학과",
+          "score": "",
+          "date": "2014년 3월 - 2020년 2월",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": "https://urban.cbnu.ac.kr/"
           }
         }
       ]
@@ -101,7 +115,7 @@
           "summary": "<ul><li><p>Bally's Interactive의 영국, 유럽 및 북미 지역의 게임 벤쳐 랜딩 페이지를 관리하는 마케팅-테크 팀에서 주니어 프론트엔드 개발자로 일했습니다.</p></li><li><p><strong>Storybook</strong>을 활용하여 UI 컴포넌트를 개발 및 유지 보수하고, <strong>React</strong>와 <strong>Styled-components</strong>를 사용해 반응형 웹사이트를 구현했습니다.</p></li><li><p>블로그 포스트를 관리하는 <strong>CMS 툴</strong>을 개발 및 유지 보수했습니다.</p></li><li><p>Agile 기반 팀의 일원으로서 스프린트 계획, 리뷰, 회고에 적극 참여했습니다.</p></li></ul>",
           "url": {
             "label": "",
-            "href": ""
+            "href": "https://careers.ballysinteractive.com/"
           }
         }
       ]
@@ -173,7 +187,7 @@
       ]
     },
     "projects": {
-      "name": "Projects",
+      "name": "프로젝트",
       "columns": 1,
       "separateLinks": true,
       "visible": true,
@@ -192,9 +206,26 @@
           ],
           "url": {
             "label": "",
-            "href": ""
+            "href": "https://github.com/minju25kim/minju25kim-resume"
+          }
+        }, 
+        {
+          "id": "random_id",
+          "visible": true,
+          "name": "블로그",
+          "description": "",
+          "date": "2024년 10월 - 현재",
+          "summary": "<ul><li><p>hugo로 만든 til+diary.</p></li></ul>",
+          "keywords": [
+            "hugo",
+            "static"
+          ],
+          "url": {
+            "label": "",
+            "href": "https://github.com/minju25kim/m25k"
           }
         }
+
       ]
     },
     "publications": {
