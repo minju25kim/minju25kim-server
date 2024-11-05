@@ -9,6 +9,7 @@
 - [ ] dockerize.
 - [ ] simple dark/light theme
 - [ ] vanilla extract css
+- [ ] responsive design mobile/web
 
 
 ## reference
