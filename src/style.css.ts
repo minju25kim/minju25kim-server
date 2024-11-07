@@ -4,7 +4,6 @@ globalStyle('*', {
   margin: '0',
   padding: '0',
   boxSizing: 'border-box',
-  // border: '0.5px solid red'
 });
 
 globalStyle(':root', {
@@ -24,120 +23,161 @@ globalStyle('a', {
 });
 
 globalStyle('a:hover', {
-  color: '#535bf2',
+  color: '#878dfa',
 });
 
 globalStyle('body', {
-  margin: '0',
   display: 'flex',
   placeItems: 'center',
   minWidth: '320px',
   minHeight: '100vh',
 });
 
-globalStyle('h1', {
-  fontSize: '3.2em',
-  lineHeight: '1.1',
-});
-
 globalStyle('#app', {
+  // border: '0.5px solid red',
   maxWidth: '1280px',
-  margin: '0 auto',
+  margin: '1rem auto',
   padding: '1rem',
   textAlign: 'center',
   display: 'flex',
   flexFlow: 'column wrap',
-  gap: '30px'
+  gap: '1rem'
 });
 
+globalStyle('h1', {
+  // border: '0.5px solid red',
+  fontSize: '3rem',
+  lineHeight: '1',
+});
+
+export const buttonContainerStyle = style({
+  // border: '0.5px solid red',
+  display: 'flex',
+  justifyContent: 'space-between',
+})
+
 export const buttonStyle = style({
-  backgroundColor: '#ccffee',
-  color: 'blue',
+  background: '#646cff',
+  color: '#fff',
   padding: '10px 20px',
-  borderRadius: '5px',
-  border: 'none',
+  borderRadius: '10px',
   fontSize: '1em',
-  fontWeight: '500',
+  fontWeight: '600',
   fontFamily: 'inherit',
+  border: '2px solid transparent',
+  selectors: {
+    '&:hover': {
+      background: '#fff',
+      color: '#646cff',
+      border: '2px solid #646cff'
+    }
+  }
 });
 
 export const paperStyle = style({
-  boxShadow: '0px 0px 50px 0px #C5C5C5',
+  border: '0.5px solid #fff',
+  boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1), 0px 16px 32px rgba(0, 0, 0, 0.05)',
   margin: '0',
-  padding: '10px',
+  padding: '1rem',
   width: '210mm',
   height: '297mm',
 });
 
-export const footerStyle = style({
-  marginTop: "50px",
-  fontSize: "16px"
-});
-
 export const basicStyle = style({
-  // border: '1px solid red',
-  fontSize: '1.3rem',
+  // border: '0.5px solid red',
+  fontSize: '1.2rem',
   display: 'flex',
   flexFlow: 'column wrap',
-  // gap: '5px',
   marginBottom: '10px'
 })
 
+export const basicHeadlineStyle = style({
+  // border:  '0.5px solid red',
+  fontSize: '1rem',
+  color: '#5c5c5c'
+})
+
 export const basicInfoStyle = style({
-  // border: '1px solid gray',
+  // border: '0.5px solid gray',
   display: 'flex',
   flexFlow: 'row wrap',
   justifyContent: 'center',
-  gap: '25px',
-  // margin: '10px',
-  fontSize: '1rem'
+  gap: '30px',
+  fontSize: '1rem',
+  color: '#5c5c5c'
 })
 
 export const sectionContainerStyle = style({
-  // border: '1px solid black',
+  // border: '0.5px solid black',
   display: 'grid',
-  gridTemplateColumns: '1fr 5fr',
-  gridTemplateRows: 'repeat(5, minmax(30px, auto))',
-  rowGap: '10px'
+  gridTemplateColumns: '1fr 6fr',
+  gridAutoRows: 'auto',
+  rowGap: '1rem',
+  // padding: '1rem', 
 })
 
 export const sectionLeftItemStyle = style({
-  // border: '2px solid red',
-  gridColumn: '1 / 2'
+  // border: '0.5px solid red',
+  gridColumn: '1 / 2',
+  padding: '0 1rem',
 })
 
 export const sectionRightItemStyle = style({
-  // border: '2px solid blue',
+  // border: '0.5px solid blue',
   gridColumn: '2 / end',
   textAlign: 'left',
-  padding: '0px 20px 0px 20px',
+  padding: '0 1rem',
   display: 'flex',
   flexFlow: 'column wrap',
   justifyContent: 'center',
-  gap: '10px',
-
+  gap: '1rem',
   selectors: {
     '&:nth-child(2)': {
-      flexFlow: 'row nowrap', 
+      flexFlow: 'row nowrap',
       justifyContent: 'flex-start',
       alignItems: 'center'
     },
   },
 })
 
+export const itemLogoStyle = style({
+  // border: '0.5px solid blue',
+  display: 'flex',
+  flexFlow: 'row wrap',
+  gap: '5px',
+})
+
 export const itemInfoStyle = style({
-  // border: '1px solid purple',
+  // border: '0.5px solid purple',
   display: 'flex',
   justifyContent: 'space-between',
+  color: '#5c5c5c'
+})
+
+export const itemKeywordStyle = style({
+  // border: '0.5px solid maroon',
+  border: '1px solid #5c5c5c',
+  padding: '0 5px',
+  borderRadius: '5px',
+  selectors: {
+    '&:nth-of-type(1)': {
+      marginLeft: '5px'
+    }
+  }
 })
 
 export const itemSummaryStyle = style({
-  // border: '1px solid pink',
-  marginBottom: '5px',
+  // border: '0.5px solid pink',
+  lineHeight: '1.6',
   listStylePosition: 'inside',
   selectors: {
     '&:last-child': {
-      marginBottom: '0', 
+      marginBottom: '0',
     },
   },
 })
+
+export const footerStyle = style({
+  marginTop: "3rem",
+  fontSize: "16px"
+});

@@ -1,4 +1,4 @@
-# resume
+# resume-paper
 
 ## goal
 
@@ -14,7 +14,8 @@
 - [ ] little icons for buttons
 - [ ] setting button gap
 - [ ] grid for section name and section items
-- [ ] 
+- [x] separate 3 parts in main.ts
+- [ ] separate paper into 5 parts.
 
 
 ## reference
@@ -25,4 +26,12 @@
 - [ ] jsPdf를 사용하면 링크가 죽어버림. 
 - [ ] jsPdf를 사용할 지, window.print()를 사용할지 결정해야 함.
 - [ ] window.print()를 사용하기로 결정
-- [ ] 
+- [ ]  
+
+## how to run
+
+### local
+```sh
+$ npm i
+$ npm run dev
+```

@@ -2,21 +2,18 @@ import './global-print-style.css'
 // import { Header } from "./components/Header.ts";
 import { Paper } from "./components/Paper.ts";
 import { Footer } from "./components/Footer.ts";
-import { Button } from "./components/Button.ts";
+import { ButtonContainer } from "./components/Button.ts";
 
 let lang = document.documentElement?.lang || 'en';
 
+// ${lang === 'en' ? Header("Resume") : Header("이력서")}
 function renderApp() {
-  document.querySelector<HTMLDivElement>('#app')!.innerHTML = /* html */`
-      <div id="buttonContainer">
-        ${lang === 'en' ? Button("lang", "한국어") : Button("lang", "English")}
-        ${lang === 'en' ? Button("pdf", "Download PDF") : Button("pdf", "PDF 다운로드")}
-        ${lang === 'en' ? Button("share", "Share") : Button("share", "공유하기")}
-      </div>
+  document.querySelector<HTMLDivElement>('#app')!.innerHTML = 
+    /* html */`
+      ${lang === 'en' ? ButtonContainer('en') : ButtonContainer('ko')}
       ${lang === 'en' ? Paper('en') : Paper('ko')}
-      ${Footer()}
-      `;
-  // ${lang === 'en' ? Header("Resume") : Header("이력서")}
+      ${lang === 'en' ? Footer('en') : Footer('ko')}
+    `;
 
   const langButton = document.getElementById("lang");
   const pdfButton = document.getElementById("pdf");
