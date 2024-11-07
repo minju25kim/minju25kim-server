@@ -7,7 +7,6 @@ import {
   sectionContainerStyle,
   itemInfoStyle,
   itemSummaryStyle,
-  linkStyle
 } from "../style.css.ts";
 import en from "../json/en.json";
 import kr from "../json/kr.json";
