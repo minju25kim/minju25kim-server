@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "김민주",
-    "headline": "",
+    "headline": "프론트엔드 개발자",
     "email": "minju25kim@gmail.com",
     "phone": "",
     "location": "서울, 대한민국",
@@ -23,30 +23,6 @@
     }
   },
   "sections": {
-    "summary": {
-      "name": "요약",
-      "columns": 1,
-      "separateLinks": true,
-      "visible": true,
-      "id": "summary",
-      "content": "<p></p>"
-    },
-    "awards": {
-      "name": "Awards",
-      "columns": 1,
-      "separateLinks": true,
-      "visible": true,
-      "id": "awards",
-      "items": []
-    },
-    "certifications": {
-      "name": "Certifications",
-      "columns": 1,
-      "separateLinks": true,
-      "visible": true,
-      "id": "certifications",
-      "items": []
-    },
     "education": {
       "name": "교육",
       "columns": 1,
@@ -112,37 +88,20 @@
           "position": "Frontend Engineer",
           "location": "런던, 영국",
           "date": "2022년 9월 - 2023년 12월",
-          "summary": "<ul><li><p>Bally's Interactive의 영국, 유럽 및 북미 지역의 게임 벤쳐 랜딩 페이지를 관리하는 마케팅-테크 팀에서 주니어 프론트엔드 개발자로 일했습니다.</p></li><li><p><strong>Storybook</strong>을 활용하여 UI 컴포넌트를 개발 및 유지 보수하고, <strong>React</strong>와 <strong>Styled-components</strong>를 사용해 반응형 웹사이트를 구현했습니다.</p></li><li><p>블로그 포스트를 관리하는 <strong>CMS 툴</strong>을 개발 및 유지 보수했습니다.</p></li><li><p>Agile 기반 팀의 일원으로서 스프린트 계획, 리뷰, 회고에 적극 참여했습니다.</p></li></ul>",
+          "summary": [
+            "영국/유럽 및 북미 지역의 게임 브랜드들의 랜딩 페이지를 제작하는 마케팅 기술 팀에서 프론트엔드 개발자로 활동했습니다.",
+            "Storybook을 사용하여 UI 개발 및 유지 보수를 수행하고, Styled-components를 사용하여 반응형 웹사이트를 구현했습니다.",
+            "프론트엔드 페이지 렌더링에 필요한 데이터를 제공하는 데이터베이스 연동 API를 구축하고, GraphQL 서버를 통해 POST 요청을 처리하고 내부 도구용 REST 엔드포인트를 구성했습니다.",
+            "사용자 데이터베이스 편집 및 페이지 데이터 조회를 처리하는 CMS 툴을 개발하고 관리했습니다.",
+            "Agile 기반 팀의 일원으로 스프린트 계획, 리뷰, 회고에 적극 참여하였으며, 프로덕트 매니저의 계획에 따라 회사 일정에 맞춰 제품이 출시될 수 있도록 협력했습니다. 디자이너, 콘텐츠 제작자, 개발 팀 간의 원활한 소통을 통해 UI/UX 개선에 기여하였습니다.",
+            "영국벤쳐 <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.jackpotjoy.com/\">jackpotjoy</a> 북미벤쳐 <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.ballybet.com/\">ballybet</a>"
+          ],
           "url": {
             "label": "",
             "href": "https://careers.ballysinteractive.com/"
           }
         }
       ]
-    },
-    "volunteer": {
-      "name": "Volunteering",
-      "columns": 1,
-      "separateLinks": true,
-      "visible": true,
-      "id": "volunteer",
-      "items": []
-    },
-    "interests": {
-      "name": "Interests",
-      "columns": 3,
-      "separateLinks": true,
-      "visible": true,
-      "id": "interests",
-      "items": []
-    },
-    "languages": {
-      "name": "Languages",
-      "columns": 2,
-      "separateLinks": true,
-      "visible": true,
-      "id": "languages",
-      "items": []
     },
     "profiles": {
       "name": "링크",
@@ -172,17 +131,6 @@
             "label": "",
             "href": "https://github.com/minju25kim"
           }
-        },
-        {
-          "id": "bossvs7oni1a1rqa279k5a2z",
-          "visible": true,
-          "network": "블로그",
-          "username": "m25k",
-          "icon": "GitHubPages",
-          "url": {
-            "label": "",
-            "href": "https://minju25kim.github.io/m25k/"
-          }
         }
       ]
     },
@@ -196,37 +144,95 @@
         {
           "id": "v53x81i8s4jcz34ibt4lk58d",
           "visible": true,
-          "name": "이력서",
-          "description": "",
+          "name": "resume-builder",
+          "description": "json포맷을 pdf 이력서로 다운 받을 수 있는 웹사이트.",
           "date": "2024년 11월 - 현재",
-          "summary": "<ul><li><p>이력서 json포맷으르 pdf로 다운 받을 수 있는 웹사이트.</p></li></ul>",
-          "keywords": [
-            "typescript",
-            "vite"
-          ],
+          "summary": "",
+          "keywords": ["vanilla-extract", "vite"],
           "url": {
             "label": "",
             "href": "https://github.com/minju25kim/minju25kim-resume"
           }
-        }, 
+        },
         {
           "id": "random_id",
           "visible": true,
           "name": "블로그",
-          "description": "",
+          "description": "개인 블로그.",
           "date": "2024년 10월 - 현재",
-          "summary": "<ul><li><p>hugo로 만든 til+diary.</p></li></ul>",
-          "keywords": [
-            "hugo",
-            "static"
-          ],
+          "summary": "",
+          "keywords": ["hugo"],
           "url": {
             "label": "",
             "href": "https://github.com/minju25kim/m25k"
           }
         }
-
       ]
+    },
+    "skills": {
+      "name": "테크 스택",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "skills",
+      "items": [
+        {
+          "id": "i9v4omgsshk1imb5t7qzepcm",
+          "visible": true,
+          "name": "UI/UX",
+          "description": "",
+          "level": 0,
+          "keywords": ["Styled-components", "Storybook", "HTML", "CSS"]
+        },
+        {
+          "id": "tv74u7e40keq1h4be2cg1qjm",
+          "visible": true,
+          "name": "Javascript",
+          "description": "",
+          "level": 0,
+          "keywords": ["Node.js", "Typescript", "React", "Express"]
+        },
+        {
+          "id": "d0vebxgpjg7mlylmc63i8zw2",
+          "visible": true,
+          "name": "DevOps",
+          "description": "",
+          "level": 0,
+          "keywords": ["Docker", "GitHub Actions"]
+        },
+        {
+          "id": "rxmvmyrxfmkmgtuotphddipg",
+          "visible": true,
+          "name": "비즈니스 도구",
+          "description": "",
+          "level": 0,
+          "keywords": ["Jira", "Microsoft teams", "Figma"]
+        }
+      ]
+    },
+    "volunteer": {
+      "name": "Volunteering",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "volunteer",
+      "items": []
+    },
+    "interests": {
+      "name": "Interests",
+      "columns": 3,
+      "separateLinks": true,
+      "visible": true,
+      "id": "interests",
+      "items": []
+    },
+    "languages": {
+      "name": "Languages",
+      "columns": 2,
+      "separateLinks": true,
+      "visible": true,
+      "id": "languages",
+      "items": []
     },
     "publications": {
       "name": "Publications",
@@ -244,63 +250,29 @@
       "id": "references",
       "items": []
     },
-    "skills": {
-      "name": "테크 스택",
+    "summary": {
+      "name": "요약",
       "columns": 1,
       "separateLinks": true,
       "visible": true,
-      "id": "skills",
-      "items": [
-        {
-          "id": "i9v4omgsshk1imb5t7qzepcm",
-          "visible": true,
-          "name": "UI/UX",
-          "description": "",
-          "level": 0,
-          "keywords": [
-            "Styled-components",
-            "Storybook",
-            "HTML",
-            "CSS"
-          ]
-        },
-        {
-          "id": "tv74u7e40keq1h4be2cg1qjm",
-          "visible": true,
-          "name": "Javascript",
-          "description": "",
-          "level": 0,
-          "keywords": [
-            "Node.js",
-            "Typescript",
-            "React",
-            "Express"
-          ]
-        },
-        {
-          "id": "d0vebxgpjg7mlylmc63i8zw2",
-          "visible": true,
-          "name": "DevOps",
-          "description": "",
-          "level": 0,
-          "keywords": [
-            "Docker",
-            "GitHub Actions"
-          ]
-        },
-        {
-          "id": "rxmvmyrxfmkmgtuotphddipg",
-          "visible": true,
-          "name": "비즈니스 도구",
-          "description": "",
-          "level": 0,
-          "keywords": [
-            "Jira",
-            "Microsoft teams",
-            "Figma"
-          ]
-        }
-      ]
+      "id": "summary",
+      "content": "<p></p>"
+    },
+    "awards": {
+      "name": "Awards",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "awards",
+      "items": []
+    },
+    "certifications": {
+      "name": "Certifications",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "certifications",
+      "items": []
     },
     "custom": {}
   }

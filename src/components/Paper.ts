@@ -1,4 +1,14 @@
-import { paperStyle, sectionStyle } from "../style.css.ts";
+import {
+  basicStyle,
+  basicInfoStyle,
+  paperStyle,
+  sectionLeftItemStyle,
+  sectionRightItemStyle,
+  sectionContainerStyle,
+  itemInfoStyle,
+  itemSummaryStyle,
+  linkStyle
+} from "../style.css.ts";
 import en from "../json/en.json";
 import kr from "../json/kr.json";
 
@@ -7,71 +17,109 @@ export function Paper(lang: string): string {
 
   return /*html*/`
     <div id="paper" class="${paperStyle}">
-      <h2>${data.basics.name}</h2>
-      <div id="info">
-        <h3>${data.basics.location}</h3>
-        <h3><a href=mailto:${data.basics.email}>${data.basics.email}</a></h3>
+      <div class="${basicStyle}">
+        <h2>${data.basics.name}</h2>
+        <h4>${data.basics.headline}</h4>
+        <div class="${basicInfoStyle}">
+          <span>${data.basics.location}</span>
+          <a href=mailto:${data.basics.email}>${data.basics.email}</a>
+        </div>
       </div>
-      <div id="link" class="${sectionStyle}">
-        <h3>${data.sections.profiles.name}</h3>
-        ${data.sections.profiles.items.map((item) => {
-        return `
-          <a href=${item.url.href}>${item.network}</a>
-          `
-        }).join("")}
-      </div>
-      <div id="project" class="${sectionStyle}">
-        <h3>${data.sections.projects.name}</h3>
-        ${data.sections.projects.items.map((item)=>{
-          return `
-          <a href=${item.url.href}>${item.name}</a>
-          <span>${item.date}</span>
-          <div>
-            ${item.keywords.map((keyword)=>{
-              return `<span>${keyword}</span>`
-            })}
+      <div class="${sectionContainerStyle}">
+
+          <h3 class="${sectionLeftItemStyle}">${data.sections.profiles.name}</h3>
+          <div class="${sectionRightItemStyle}">
+            ${data.sections.profiles.items.map((item) => {
+            return `
+              <a href=${item.url.href}>${item.network}</a>
+            `
+            }).join("")}
           </div>
-          <br/>
-          `
-        }).join("")}
-      </div>
-      <div id="experience" class="${sectionStyle}">
-        <h3>${data.sections.experience.name}</h3>
-        ${data.sections.experience.items.map((item)=>{
-          return `
-            <a href=${item.url.href}>${item.company}</a>
-            <br/>
-            <span>${item.location}</span>
-            <span>${item.date}</span>
-            <span>${item.position}</span>
-            <div>${item.summary}</div>
-          `
-        }).join("")}
-      </div>
-      <div id="skills" class="${sectionStyle}">
-        <h3>${data.sections.skills.name}</h3>
-        ${data.sections.skills.items.map((item)=>{
-          return `
-            <div>
-            <h4>${item.name}</h4>
-            ${item.keywords.map((keyword)=>{
-              return `<span>${keyword}</span>`
-            })}
+
+          <h3 class="${sectionLeftItemStyle}">${data.sections.experience.name}</h3>
+          <div class="${sectionRightItemStyle}">
+            ${data.sections.experience.items.map((item) => {
+              return `
+                <div>
+                  <div class="${itemInfoStyle}">
+                    <a href=${item.url.href}>${item.company}</a>
+                    <span>${item.location}</span>
+                  </div>
+                  <div class="${itemInfoStyle}">
+                    <h4>${item.position}</h4>
+                    <span>${item.date}</span>
+                  </div>
+                </div>
+                <ul>
+                ${item.summary.map((item) => {
+                  return `<li class="${itemSummaryStyle}">${item}</li>`
+                   }).join('')}
+                  </ul>
+              `
+            }).join("")}
+          </div>
+
+          <h3 class="${sectionLeftItemStyle}">${data.sections.skills.name}</h3>
+          <div class="${sectionRightItemStyle}">
+            ${data.sections.skills.items.map((item) => {
+                  return `
+                    <div>
+                    <h4>${item.name}</h4>
+                    <div>
+                    ${item.keywords.map((keyword) => {
+                    return `<span>${keyword}</span>`
+                    }).join(", ")}
+                    </div>
+                    </div>
+                    `
+                }).join("")}
+          </div>
+
+          ${
+            data.sections.projects.items.length > 0 ?
+            `
+            <h3 class="${sectionLeftItemStyle}">${data.sections.projects.name}</h3>
+            <div class="${sectionRightItemStyle}">
+            ${data.sections.projects.items.map((item) => {
+              return `
+              <div>
+              <div class="${itemInfoStyle}">
+                <a href=${item.url.href}>${item.name}</a>
+                <span>${item.date}</span>
+              </div>
+              <div class="${itemInfoStyle}">
+                <span>${item.description}</span>
+                <div>
+                ${item.keywords.map((keyword) => {
+                  return `
+                  <span>${keyword}</span>
+                  `
+                }).join(", ")}
+                </div>
+              </div>
+              </div>
+              `
+            }).join("")}
             </div>
-          `
-        }).join("")}
-      </div>
-      <div id="education" class="${sectionStyle}">
-        <h3>${data.sections.education.name}</h3>
-        ${data.sections.education.items.map((item)=>{
-          return `
-            <a href=${item.url.href}>${item.institution}</a>
-            <span>${item.date}</span>
-            <span>${item.area}</span>
-            <span>${item.studyType}</span>
-            <div>${item.summary}</div>
-          `
-        }).join("")}
+            `
+            :
+            ""
+          }
+
+          <h3 class="${sectionLeftItemStyle}">${data.sections.education.name}</h3>
+          <div class="${sectionRightItemStyle}">
+            ${data.sections.education.items.map((item) => {
+             return `
+              <div>
+                <div class="${itemInfoStyle}">
+                  <a href=${item.url.href}>${item.institution}</a>
+                  <span>${item.date}</span>
+                </div>
+                <span>${item.area} ${item.studyType}</span>
+              </div>
+              `
+           }).join("")}
+          </div>
       </div>
     </div>
   `;

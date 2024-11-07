@@ -12,6 +12,9 @@
 - [ ] responsive design mobile/web
 - [ ] iiverted tab logo icon
 - [ ] little icons for buttons
+- [ ] setting button gap
+- [ ] grid for section name and section items
+- [ ] 
 
 
 ## reference

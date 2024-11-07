@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Minju Kim",
-    "headline": "Full stack Developer",
+    "headline": "Frontend Developer",
     "email": "minju25kim@gmail.com",
     "phone": "",
     "location": "Seoul, South Korea",
@@ -94,11 +94,19 @@
         {
           "id": "nv6z5cta3rm9ejbuqci5fg3y",
           "visible": true,
-          "company": "Bally's Interactive (London, UK)",
+          "company": "Bally's Interactive",
           "position": "Frontend Engineer",
           "location": "London, UK",
           "date": "Sep 2022 - Dec 2023",
-          "summary": "<ul><li><p>As a Frontend Developer in a marketing-tech team, my focus centred on crafting landing pages for gambling ventures across the UK/EU and North America. I was responsible for creating and managing components within these pages, utilizing Storybook for UI development and implementing styled-components to create customized elements in React.js.</p></li><li><p>Constructed a database-interfacing API to provide essential data for frontend page rendering, utilizing a GraphQL server for post requests and establishing REST endpoints for internal tooling. Managed the content creator(CMS tool), facilitating user database edits and page data retrieval through the composer interface.</p></li><li><p>Contributed to an agile-based team, actively participating in sprint planning, reviews, and retrospectives. Collaborated closely with the product owner to ensure timely product completion aligned with company schedules. Oversaw the release process in coordination with the DevOps team. Facilitated effective communication between designers, content creators, and the development team to enhance UI/UX.</p></li><li><p>Examples of work UK: <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.jackpotjoy.com/\">https://www.jackpotjoy.com/</a> NA: <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.ballybet.com/\">https://www.ballybet.com/</a></p></li></ul>",
+          "summary": [
+            "As a Frontend Developer in a marketing-tech team, my focus centred on crafting landing pages for gambling ventures across the UK/EU and North America.",
+            "I was responsible for creating and managing components within these pages, utilizing Storybook for UI development and implementing styled-components to create customized elements in React.js.",
+            "Constructed a database-interfacing API to provide essential data for frontend page rendering, utilizing a GraphQL server for post requests and establishing REST endpoints for internal tooling.",
+            "Managed the content creator(CMS tool), facilitating user database edits and page data retrieval through the composer interface.",
+            "Contributed to an agile-based team, actively participating in sprint planning, reviews, and retrospectives.",
+            "Collaborated closely with the product owner to ensure timely product completion aligned with company schedules. Oversaw the release process in coordination with the DevOps team. Facilitated effective communication between designers, content creators, and the development team to enhance UI/UX.",
+            "Examples of work UK: <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.jackpotjoy.com/\">https://www.jackpotjoy.com/</a> NA: <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.ballybet.com/\">https://www.ballybet.com/</a>"
+          ],
           "url": {
             "label": "",
             "href": ""
@@ -230,11 +238,7 @@
           "name": "DevOps",
           "description": "",
           "level": 0,
-          "keywords": [
-            "Docker",
-            "GoCD",
-            "GitHub Actions"
-          ]
+          "keywords": ["Docker", "GoCD", "GitHub Actions"]
         },
         {
           "id": "rxmvmyrxfmkmgtuotphddipg",
@@ -254,5 +258,5 @@
       ]
     },
     "custom": {}
-  },
+  }
 }
