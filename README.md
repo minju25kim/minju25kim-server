@@ -17,7 +17,7 @@
 - [ ] simple dark/light/system theme button
 - [x] vanilla extract css
 - [ ] responsive design mobile/web
-- [ ] iiverted tab logo icon
+- [ ] inverted tab logo icon
 - [x] little icons for buttons
 - [x] setting button gap
 - [x] grid for section name and section items
@@ -31,7 +31,7 @@
 - [rxresu](https://rxresu.me/)
 - font awesome svg icons
 
-## problems and choices
+## problems and choices 개발일지
 
 - jsPdf를 사용하면 한국어 폰트가 깨짐. 해결: fontFamily를 더함.
 - jsPdf를 사용하면 링크가 죽어버림.
@@ -39,7 +39,9 @@
 - window.print()를 사용하기로 결정
 - svg사이즈가 안 줄어듬. inline 스타일 추가.
 - 과연 사람들이 json포맷의 이력을 사용할까?라는 의문이 듬.
--
+- theme button이 예상대로 작동을 하지 않음.
+- react를 사용하지 않으니 renderApp()을 계속 사용해서 전부 다 reload하는 그런 상황
+- 
 
 ## how to run
 
