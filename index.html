@@ -3,10 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Light theme favicon -->
+    <link
+      rel="icon"
+      id="favicon-light"
+      href="/public/resume-filled.svg"
+      media="(prefers-color-scheme: light)"
+    />
+
+    <!-- Dark theme favicon -->
+    <link
+      rel="icon"
+      id="favicon-dark"
+      href="/public/resume-outline.svg"
+      media="(prefers-color-scheme: dark)"
+    />
+
     <title>이력서</title>
   </head>
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
+    <script>
+      const lightIcon = document.getElementById("favicon-light");
+      const darkIcon = document.getElementById("favicon-dark");
+
+      function updateFavicon() {
+        if (
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches
+        ) {
+          darkIcon?.setAttribute("rel", "icon");
+          lightIcon?.setAttribute("rel", "alternate icon");
+        } else {
+          lightIcon?.setAttribute("rel", "icon");
+          darkIcon?.setAttribute("rel", "alternate icon");
+        }
+      }
+      updateFavicon();
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", updateFavicon);
+    </script>
   </body>
 </html>

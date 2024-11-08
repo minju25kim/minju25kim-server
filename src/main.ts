@@ -1,6 +1,7 @@
 import './global-print-style.css'
 // import { Header } from "./components/Header.ts";
 import { Paper } from "./components/Paper.ts";
+import { Theme } from './components/Theme.ts'
 import { Footer } from "./components/Footer.ts";
 import { ButtonContainer } from "./components/Button.ts";
 
@@ -12,6 +13,7 @@ function renderApp() {
     /* html */`
       ${lang === 'en' ? ButtonContainer('en') : ButtonContainer('ko')}
       ${lang === 'en' ? Paper('en') : Paper('ko')}
+      ${Theme()}
       ${lang === 'en' ? Footer('en') : Footer('ko')}
     `;
 

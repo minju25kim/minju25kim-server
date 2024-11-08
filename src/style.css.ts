@@ -24,7 +24,7 @@ globalStyle('body', {
 });
 
 globalStyle('#app', {
-  // border: '0.5px solid red',
+  border: '0.5px solid red',
   maxWidth: '1280px',
   margin: '1rem auto',
   padding: '1rem',
@@ -187,6 +187,17 @@ export const itemSummaryStyle = style({
 })
 
 export const footerStyle = style({
-  marginTop: "3rem",
+  border: '0.5px solid pink',
+  // marginTop: "3rem",
   fontSize: "16px"
 });
+
+export const themeButtonStyle = style({
+  border: '0.5px solid pink',
+  // alignItems: 'center',
+  alignSelf: "center",
+  // width: "auto",
+  appearance: 'none',
+  background: "none",
+  cursor: "pointer"
+})
