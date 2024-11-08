@@ -22,7 +22,7 @@
 - [x] setting button gap
 - [x] grid for section name and section items
 - [x] separate 3 parts in main.ts
-- [ ] separate paper into 5 parts.
+- [x] separate paper into 5 parts.
 - [ ] read json file when user provided
 
 

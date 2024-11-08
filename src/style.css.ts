@@ -16,16 +16,6 @@ globalStyle(':root', {
   MozOsxFontSmoothing: 'grayscale',
 });
 
-globalStyle('a', {
-  fontWeight: '600',
-  color: '#646cff',
-  textDecoration: 'inherit',
-});
-
-globalStyle('a:hover', {
-  color: '#878dfa',
-});
-
 globalStyle('body', {
   display: 'flex',
   placeItems: 'center',
@@ -50,27 +40,46 @@ globalStyle('h1', {
   lineHeight: '1',
 });
 
+globalStyle('a', {
+  fontWeight: '600',
+  color: '#646cff',
+  textDecoration: 'inherit',
+});
+
+globalStyle('a:hover', {
+  color: '#878dfa',
+});
+
 export const buttonContainerStyle = style({
   // border: '0.5px solid red',
   display: 'flex',
   justifyContent: 'space-between',
+  columnGap: '1rem'
 })
 
 export const buttonStyle = style({
-  background: '#646cff',
-  color: '#fff',
+  flex: '1',
+  background: '#fff',
+  color: '#646cff',
+  border: '2px solid #646cff',
   padding: '10px 20px',
-  borderRadius: '10px',
-  fontSize: '1em',
+  borderRadius: '1rem',
+  fontSize: '1rem',
   fontWeight: '600',
+  // width: '180px',
+  height: '3rem',
   fontFamily: 'inherit',
-  border: '2px solid transparent',
+
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  columnGap: '10px',
   selectors: {
     '&:hover': {
-      background: '#fff',
-      color: '#646cff',
-      border: '2px solid #646cff'
-    }
+      background: '#646cff',
+      color: '#fff',
+      border: '2px solid transparent',
+    },
   }
 });
 

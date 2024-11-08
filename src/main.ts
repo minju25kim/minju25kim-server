@@ -8,7 +8,7 @@ let lang = document.documentElement?.lang || 'en';
 
 // ${lang === 'en' ? Header("Resume") : Header("이력서")}
 function renderApp() {
-  document.querySelector<HTMLDivElement>('#app')!.innerHTML = 
+  document.querySelector<HTMLDivElement>('#app')!.innerHTML =
     /* html */`
       ${lang === 'en' ? ButtonContainer('en') : ButtonContainer('ko')}
       ${lang === 'en' ? Paper('en') : Paper('ko')}
@@ -16,12 +16,19 @@ function renderApp() {
     `;
 
   const langButton = document.getElementById("lang");
+  const jsonButton = document.getElementById('json')
   const pdfButton = document.getElementById("pdf");
   const shareButton = document.getElementById("share");
 
+
   langButton && langButton.addEventListener("click", toggleLanguage);
+  jsonButton && jsonButton.addEventListener('click', handleJson)
   pdfButton && pdfButton.addEventListener("click", handlePdf);
   shareButton && shareButton.addEventListener("click", handleShare)
+}
+
+function handleJson() {
+  console.log("click")
 }
 
 function handleShare() {
