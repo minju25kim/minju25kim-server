@@ -18,7 +18,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
   },
   "include": ["src", "dist/NotoSansKR-Regular-normal.js", "NotoSansKR-Regular-normal.js"]
 }

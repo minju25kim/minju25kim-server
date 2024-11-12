@@ -24,7 +24,7 @@ globalStyle('body', {
 });
 
 globalStyle('#app', {
-  border: '0.5px solid red',
+  // border: '0.5px solid red',
   maxWidth: '1280px',
   margin: '1rem auto',
   padding: '1rem',
@@ -66,10 +66,8 @@ export const buttonStyle = style({
   borderRadius: '1rem',
   fontSize: '1rem',
   fontWeight: '600',
-  // width: '180px',
   height: '3rem',
   fontFamily: 'inherit',
-
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
@@ -103,7 +101,6 @@ export const basicStyle = style({
 export const basicHeadlineStyle = style({
   // border:  '0.5px solid red',
   fontSize: '1rem',
-  color: '#5c5c5c'
 })
 
 export const basicInfoStyle = style({
@@ -113,7 +110,6 @@ export const basicInfoStyle = style({
   justifyContent: 'center',
   gap: '30px',
   fontSize: '1rem',
-  color: '#5c5c5c'
 })
 
 export const sectionContainerStyle = style({
@@ -122,7 +118,6 @@ export const sectionContainerStyle = style({
   gridTemplateColumns: '1fr 6fr',
   gridAutoRows: 'auto',
   rowGap: '1rem',
-  // padding: '1rem', 
 })
 
 export const sectionLeftItemStyle = style({
@@ -160,14 +155,14 @@ export const itemInfoStyle = style({
   // border: '0.5px solid purple',
   display: 'flex',
   justifyContent: 'space-between',
-  color: '#5c5c5c'
 })
 
 export const itemKeywordStyle = style({
-  // border: '0.5px solid maroon',
-  border: '1px solid #5c5c5c',
-  padding: '0 5px',
-  borderRadius: '5px',
+  border: '1px solid #646cff99',
+  padding: '2px 4px',
+  borderRadius: '4px',
+  fontSize: '0.8rem',
+  fontWeight: '500',
   selectors: {
     '&:nth-of-type(1)': {
       marginLeft: '5px'
@@ -187,17 +182,6 @@ export const itemSummaryStyle = style({
 })
 
 export const footerStyle = style({
-  border: '0.5px solid pink',
-  // marginTop: "3rem",
+  // border: '0.5px solid pink',
   fontSize: "16px"
 });
-
-export const themeButtonStyle = style({
-  border: '0.5px solid pink',
-  // alignItems: 'center',
-  alignSelf: "center",
-  // width: "auto",
-  appearance: 'none',
-  background: "none",
-  cursor: "pointer"
-})

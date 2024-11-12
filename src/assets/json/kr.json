@@ -148,23 +148,10 @@
           "description": "json포맷을 pdf 이력서로 다운 받을 수 있는 웹사이트.",
           "date": "2024년 11월 - 현재",
           "summary": "",
-          "keywords": ["vanilla-extract", "vite"],
+          "keywords": ["vanilla-extract", "vite","typescript"],
           "url": {
             "label": "",
-            "href": "https://github.com/minju25kim/minju25kim-resume"
-          }
-        },
-        {
-          "id": "random_id",
-          "visible": true,
-          "name": "블로그",
-          "description": "개인 블로그.",
-          "date": "2024년 10월 - 현재",
-          "summary": "",
-          "keywords": ["hugo"],
-          "url": {
-            "label": "",
-            "href": "https://github.com/minju25kim/m25k"
+            "href": "https://github.com/minju25kim/resume-paper"
           }
         }
       ]

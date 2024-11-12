@@ -6,7 +6,6 @@
 - a4에서 이력서가 어떻게 보일지 궁금 할 때
 - 영어/한국어 2가지 버젼의 이력서가 모두 필요할 때
 - 이력서의 링크를 공유해야 할 때
-- 이력서 자체를 공유해야 할 때
 
 ## goal
 - [x] en/kr
@@ -14,22 +13,21 @@
 - [x] json to html
 - [ ] deploy aws free tier
 - [ ] dockerize.
-- [ ] simple dark/light/system theme button
+- [ ] simple dark/light/system theme button > 추후 추가
 - [x] vanilla extract css
-- [ ] responsive design mobile/web
-- [ ] inverted tab logo icon
+- [ ] responsive design mobile/web > 추후 추가
+- [ ] inverted tab logo icon > 취소
 - [x] little icons for buttons
 - [x] setting button gap
 - [x] grid for section name and section items
 - [x] separate 3 parts in main.ts
 - [x] separate paper into 5 parts.
-- [ ] read json file when user provided
-- [ ] share button will provide the printable pdf file.
+- [ ] read json file when user provided > 추후 추가
+- [ ] share button will provide the printable pdf file. > 추후 추가
 
-## reference
+## idea reference
 
 - [rxresu](https://rxresu.me/)
-- font awesome svg icons
 
 ## problems and choices 개발일지
 
@@ -41,13 +39,15 @@
 - 과연 사람들이 json포맷의 이력을 사용할까?라는 의문이 듬.
 - theme button이 예상대로 작동을 하지 않음.
 - react를 사용하지 않으니 renderApp()을 계속 사용해서 전부 다 reload하는 그런 상황
-- 
+- theme버튼을 걷어냄.
+- 모바일 버전은 추후 추가.
+- json upload 기능은 추가하지 않고, 내 이력서를 보여주고 링크를 공유하는 것에 초점을 맞춤.
 
 ## how to run
 
 ```zsh
 # local
-$ git clone github-link-here.git
+$ git clone https://github.com/minju25kim/resume-paper
 $ npm i
 $ npm run dev
 ```
@@ -56,10 +56,11 @@ $ npm run dev
 
 - vite
 - typescript
+- vanilla-extract
 
 ## JSON format
 
-- use this format to upload your json file.
+- use this json format 
 
 ```json
 {

@@ -2,7 +2,7 @@ import {
   paperStyle,
   sectionContainerStyle,
 } from "../style.css.ts";
-import Basic from './Paper/Basic.ts'
+import Basic from './Paper/BasicInfo.ts'
 import SectionProfile from './Paper/SectionProfile.ts'
 import SectionExperience from "./Paper/SectionExperience.ts";
 import SectionSkill from "./Paper/SectionSkill.ts";

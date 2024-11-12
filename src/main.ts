@@ -1,36 +1,27 @@
-import './global-print-style.css'
-// import { Header } from "./components/Header.ts";
+import './print.css'
+import { Header } from "./components/Header.ts";
+import { ButtonContainer } from "./components/ButtonContainer.ts";
 import { Paper } from "./components/Paper.ts";
-import { Theme } from './components/Theme.ts'
 import { Footer } from "./components/Footer.ts";
-import { ButtonContainer } from "./components/Button.ts";
 
 let lang = document.documentElement?.lang || 'en';
 
-// ${lang === 'en' ? Header("Resume") : Header("이력서")}
 function renderApp() {
   document.querySelector<HTMLDivElement>('#app')!.innerHTML =
-    /* html */`
-      ${lang === 'en' ? ButtonContainer('en') : ButtonContainer('ko')}
-      ${lang === 'en' ? Paper('en') : Paper('ko')}
-      ${Theme()}
-      ${lang === 'en' ? Footer('en') : Footer('ko')}
-    `;
+  /* html */`
+    ${lang === 'en' ? Header("Resume") : Header("이력서")}
+    ${lang === 'en' ? ButtonContainer('en') : ButtonContainer('ko')}
+    ${lang === 'en' ? Paper('en') : Paper('ko')}
+    ${lang === 'en' ? Footer('en') : Footer('ko')}
+  `;
 
   const langButton = document.getElementById("lang");
-  const jsonButton = document.getElementById('json')
-  const pdfButton = document.getElementById("pdf");
+  const pdfButton = document.getElementById("download");
   const shareButton = document.getElementById("share");
 
-
   langButton && langButton.addEventListener("click", toggleLanguage);
-  jsonButton && jsonButton.addEventListener('click', handleJson)
   pdfButton && pdfButton.addEventListener("click", handlePdf);
   shareButton && shareButton.addEventListener("click", handleShare)
-}
-
-function handleJson() {
-  console.log("click")
 }
 
 function handleShare() {
@@ -49,10 +40,10 @@ function toggleLanguage() {
 
   if (currentLang === "en") {
     htmlElement.setAttribute("lang", "ko");
-    document.title = "이력서";
+    document.title = "김민주 이력서";
   } else {
     htmlElement.setAttribute("lang", "en");
-    document.title = "Resume";
+    document.title = "Minju Kim's Resume";
   }
   renderApp();
 }
