@@ -148,7 +148,11 @@
           "description": "json포맷을 pdf 이력서로 다운 받을 수 있는 웹사이트.",
           "date": "2024년 11월 - 현재",
           "summary": "",
-          "keywords": ["vanilla-extract", "vite","typescript"],
+          "keywords": [
+            "vanilla-extract",
+            "vite",
+            "typescript"
+          ],
           "url": {
             "label": "",
             "href": "https://github.com/minju25kim/resume-paper"
@@ -169,7 +173,14 @@
           "name": "UI/UX",
           "description": "",
           "level": 0,
-          "keywords": ["Styled-components", "Storybook", "HTML", "CSS"]
+          "keywords": [
+            "HTML",
+            "CSS",
+            "Styled-components",
+            "Storybook",
+            "TailwindCSS",
+            "vanilla-extract"
+          ]
         },
         {
           "id": "tv74u7e40keq1h4be2cg1qjm",
@@ -177,7 +188,12 @@
           "name": "Javascript",
           "description": "",
           "level": 0,
-          "keywords": ["Node.js", "Typescript", "React", "Express"]
+          "keywords": [
+            "React",
+            "Typescript",
+            "Node.js",
+            "Express"
+          ]
         },
         {
           "id": "d0vebxgpjg7mlylmc63i8zw2",
@@ -185,7 +201,26 @@
           "name": "DevOps",
           "description": "",
           "level": 0,
-          "keywords": ["Docker", "GitHub Actions"]
+          "keywords": [
+            "Git",
+            "GitHub Actions",
+            "Docker",
+            "npm",
+            "yarn",
+            "vite"
+          ]
+        },
+        {
+          "id": "random_id",
+          "visible": true,
+          "name": "DB",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "MongoDB",
+            "SQLite",
+            "PostgreSQL"
+          ]
         },
         {
           "id": "rxmvmyrxfmkmgtuotphddipg",
@@ -193,7 +228,11 @@
           "name": "비즈니스 도구",
           "description": "",
           "level": 0,
-          "keywords": ["Jira", "Microsoft teams", "Figma"]
+          "keywords": [
+            "Jira",
+            "Microsoft teams",
+            "Figma"
+          ]
         }
       ]
     },

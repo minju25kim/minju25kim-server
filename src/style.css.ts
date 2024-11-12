@@ -129,7 +129,7 @@ export const sectionLeftItemStyle = style({
 export const sectionRightItemStyle = style({
   // border: '0.5px solid blue',
   gridColumn: '2 / end',
-  textAlign: 'left',
+  textAlign: 'justify',
   padding: '0 1rem',
   display: 'flex',
   flexFlow: 'column wrap',

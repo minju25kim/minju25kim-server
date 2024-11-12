@@ -29,7 +29,7 @@
       "separateLinks": true,
       "visible": true,
       "id": "summary",
-      "content": "<p>I believe that effective communication among team members is essential for achieving success in the workplace. As a Full Stack Developer, I am eager to advance to the next level in my domain, leveraging my skills and experience to contribute meaningfully to the team and drive impactful results.</p>"
+      "content": ""
     },
     "awards": {
       "name": "Awards",
@@ -149,7 +149,7 @@
           "id": "dky0qlk33ujjmsb7km17534j",
           "visible": true,
           "network": "Linkedin",
-          "username": "Linkedin",
+          "username": "minju25kim",
           "icon": "linkedin",
           "url": {
             "label": "",
@@ -160,7 +160,7 @@
           "id": "vq6bjixtkwi0k5i6slrwmogc",
           "visible": true,
           "network": "Github",
-          "username": "Github",
+          "username": "minju25kim",
           "icon": "github",
           "url": {
             "label": "",
@@ -238,7 +238,11 @@
           "name": "DevOps",
           "description": "",
           "level": 0,
-          "keywords": ["Docker", "GoCD", "GitHub Actions"]
+          "keywords": [
+            "Docker",
+            "GoCD",
+            "GitHub Actions"
+          ]
         },
         {
           "id": "rxmvmyrxfmkmgtuotphddipg",
