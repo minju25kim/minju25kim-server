@@ -47,8 +47,10 @@ jobs:
 
     - name: Process task definition
       run: |
-        # Replace AWS account ID in task definition
+        # Replace placeholders in task definition
         sed -i "s/\${AWS_ACCOUNT_ID}/${{ secrets.AWS_ACCOUNT_ID }}/g" task-definition.json
+        sed -i "s/\${AWS_REGION}/${{ env.AWS_REGION }}/g" task-definition.json
+        sed -i "s/\${ECR_REPOSITORY}/${{ env.ECR_REPOSITORY }}/g" task-definition.json
 
     - name: Fill in the new image ID in the Amazon ECS task definition
       id: task-def

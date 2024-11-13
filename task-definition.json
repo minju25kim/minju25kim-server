@@ -4,7 +4,7 @@
   "containerDefinitions": [
     {
       "name": "paper-resume",
-      "image": "IMAGE_PLACEHOLDER",
+      "image": "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPOSITORY}:latest",
       "cpu": 256,
       "memory": 512,
       "portMappings": [
