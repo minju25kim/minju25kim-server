@@ -30,22 +30,10 @@ jobs:
       - name: Cache build artifacts
         uses: actions/cache@v3
         with:
-          path: |
-            dist
-            build
+          path: dist
           key: ${{ runner.os }}-build-${{ github.sha }}
-           
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: build-files
-          path: |
-            dist/
-            build/
 
       - name: List build contents
         run: |
           echo "Contents of dist:"
-          ls -la dist/ || echo "dist/ not found"
-          echo "Contents of build:"
-          ls -la build/ || echo "build/ not found"
+          ls -la dist/
