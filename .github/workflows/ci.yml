@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      cache-key: ${{ steps.cache-key.outputs.key }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+        
+      - name: Build
+        run: npm run build
+      
+      - name: Set cache key
+        id: cache-key
+        run: echo "key=${{ runner.os }}-build-${{ github.sha }}" >> $GITHUB_OUTPUT
+      
+      - name: Cache build artifacts
+        uses: actions/cache@v4
+        with:
+          path: dist
+          key: ${{ steps.cache-key.outputs.key }}
+
+      - name: List build contents
+        run: |
+          echo "Contents of dist:"
+          ls -la dist/

@@ -1,32 +1,30 @@
 # Use a Node base image
 FROM node:20-alpine AS build
 
-LABEL maintainer="minju25kim@gmail.com"
-LABEL version="0.0.1"
-
 # Set working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json to install dependencies
+# Copy package files
 COPY package*.json ./
 
-# Install only production dependencies
-RUN npm install --production
+# Install dependencies
+RUN npm install
 
 # Copy the rest of the application code
 COPY . .
 
-# Build the application (if applicable)
+# Build the application
 RUN npm run build
 
-FROM node:20-alpine
+# Production image
+FROM nginx:alpine
 
-WORKDIR /app
+# Copy built assets from builder
+COPY --from=build /app/dist /usr/share/nginx/html
 
-COPY --from=build /app . 
+# Copy nginx config if you have custom configuration
+# COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-EXPOSE 5173
+EXPOSE 80
 
-ENV NAME Production
-
-CMD ["npm", "run", "start"]
+CMD ["nginx", "-g", "daemon off;"]
