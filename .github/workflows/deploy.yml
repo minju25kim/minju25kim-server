@@ -6,10 +6,6 @@ on:
 
 env:
   AWS_REGION: us-east-1                   
-  ECR_REPOSITORY: first-repo         
-  ECS_SERVICE: resume-paper-service          
-  ECS_CLUSTER: paper-resume         
-  CONTAINER_NAME: paper-resume    
 
 permissions:
   contents: read
@@ -44,26 +40,3 @@ jobs:
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
         echo "image=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT
-
-    - name: Process task definition
-      run: |
-        # Replace placeholders in task definition
-        sed -i "s/\${AWS_ACCOUNT_ID}/${{ secrets.AWS_ACCOUNT_ID }}/g" task-definition.json
-        sed -i "s/\${AWS_REGION}/${{ env.AWS_REGION }}/g" task-definition.json
-        sed -i "s/\${ECR_REPOSITORY}/${{ env.ECR_REPOSITORY }}/g" task-definition.json
-
-    - name: Fill in the new image ID in the Amazon ECS task definition
-      id: task-def
-      uses: aws-actions/amazon-ecs-render-task-definition@v1
-      with:
-        task-definition: task-definition.json
-        container-name: ${{ env.CONTAINER_NAME }}
-        image: ${{ steps.build-image.outputs.image }}
-
-    - name: Deploy Amazon ECS task definition
-      uses: aws-actions/amazon-ecs-deploy-task-definition@v1
-      with:
-        task-definition: ${{ steps.task-def.outputs.task-definition }}
-        service: ${{ env.ECS_SERVICE }}
-        cluster: ${{ env.ECS_CLUSTER }}
-        wait-for-service-stability: true 
