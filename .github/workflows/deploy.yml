@@ -7,7 +7,7 @@ on:
 env:
   AWS_REGION: us-east-1                   
   ECR_REPOSITORY: first-repo         
-  ECS_SERVICE: paper-resume          
+  ECS_SERVICE: resume-paper-service          
   ECS_CLUSTER: paper-resume         
   CONTAINER_NAME: paper-resume    
 
