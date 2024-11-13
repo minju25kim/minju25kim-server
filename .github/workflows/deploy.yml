@@ -1,13 +1,11 @@
 name: Deploy to Amazon ECR
 
 on:
-    push:
-        branches: ["main"]
     workflow_run:
-        workflows: ["CI"] 
-        types:
+      workflows: ["CI"]
+      types:
         - completed
-        branches:
+      branches:
         - main
 
 env:
