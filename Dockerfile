@@ -1,6 +1,9 @@
 # Use a Node base image
 FROM node:20-alpine AS build
 
+LABEL maintainer="minju25kim@gmail.com"
+LABEL version="0.0.1"
+
 # Set working directory
 WORKDIR /app
 
@@ -23,5 +26,7 @@ WORKDIR /app
 COPY --from=build /app . 
 
 EXPOSE 5173
+
+ENV NAME Production
 
 CMD ["npm", "run", "start"]
