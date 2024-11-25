@@ -89,12 +89,14 @@
           "location": "런던, 영국",
           "date": "2022년 9월 - 2023년 12월",
           "summary": [
-            "영국/유럽 및 북미 지역의 게임 브랜드들의 랜딩 페이지를 제작하는 마케팅 기술 팀에서 프론트엔드 개발자로 활동했습니다.",
-            "Storybook을 사용하여 UI 개발 및 유지 보수를 수행하고, Styled-components를 사용하여 반응형 웹사이트를 구현했습니다.",
-            "프론트엔드 페이지 렌더링에 필요한 데이터를 제공하는 데이터베이스 연동 API를 구축하고, GraphQL 서버를 통해 POST 요청을 처리하고 내부 도구용 REST 엔드포인트를 구성했습니다.",
-            "사용자 데이터베이스 편집 및 페이지 데이터 조회를 처리하는 CMS 툴을 개발하고 관리했습니다.",
-            "Agile 기반 팀의 일원으로 스프린트 계획, 리뷰, 회고에 적극 참여하였으며, 프로덕트 매니저의 계획에 따라 회사 일정에 맞춰 제품이 출시될 수 있도록 협력했습니다. 디자이너, 콘텐츠 제작자, 개발 팀 간의 원활한 소통을 통해 UI/UX 개선에 기여하였습니다.",
-            "영국벤쳐 <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.jackpotjoy.com/\">jackpotjoy</a> 북미벤쳐 <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.ballybet.com/\">ballybet</a>"
+            "영국/유럽 및 북미 지역 게임 브랜드의 랜딩 페이지를 관리하는 마케팅 테크 팀에서 프론트엔드 개발자로 근무했습니다.",
+            "Storybook을 사용하여 컴포넌트를 개발하고 관리했으며, Styled-components를 활용해 모바일/웹 반응형 웹사이트를 구현했습니다.",
+            "마케팅 콘텐츠 팀의 블로그 콘텐츠 데이터베이스를 편집하고, 페이지 데이터 조회를 처리하는 CMS 도구(Composer)를 개발했습니다.",
+            "프론트엔드 페이지 렌더링에 필요한 데이터를 제공하는 API를 관리했으며, GraphQL 서버를 통해 POST 요청을 처리했습니다.",
+            "GoCD, Jira, 그리고 GitHub Actions를 활용해 애플리케이션의 패키지 릴리즈 프로세스를 구축하고, pre-production환경에서 프리뷰를 마친 후 일정에 맞춰 production에 배포했습니다.",
+            "Agile 기반 팀의 일원으로 스프린트 계획, 리뷰, 회고에 적극 참여하며, 프로덕트 오너의 계획에 따라 회사 일정에 맞춰 제품을 성공적으로 출시했습니다.",
+            "디자이너, 콘텐츠 제작자, 개발 팀 간 원활한 소통을 통해 UI/UX 개선에 기여했습니다.",
+            "영국 브랜드  <a href='https://www.jackpotjoy.com/' target='_blank' rel='noopener noreferrer'>jackpotjoy</a>와 북미 브랜드 <a href='https://www.ballybet.com/' target='_blank' rel='noopener noreferrer'>ballybet</a> 프로젝트에 참여했습니다."
           ],
           "url": {
             "label": "",
@@ -111,17 +113,6 @@
       "id": "profiles",
       "items": [
         {
-          "id": "dky0qlk33ujjmsb7km17534j",
-          "visible": true,
-          "network": "링크드인",
-          "username": "minju25kim",
-          "icon": "linkedin",
-          "url": {
-            "label": "",
-            "href": "https://www.linkedin.com/in/minju25kim/"
-          }
-        },
-        {
           "id": "vq6bjixtkwi0k5i6slrwmogc",
           "visible": true,
           "network": "깃허브",
@@ -130,6 +121,17 @@
           "url": {
             "label": "",
             "href": "https://github.com/minju25kim"
+          }
+        },
+        {
+          "id": "dky0qlk33ujjmsb7km17534j",
+          "visible": true,
+          "network": "링크드인",
+          "username": "minju25kim",
+          "icon": "linkedin",
+          "url": {
+            "label": "",
+            "href": "https://www.linkedin.com/in/minju25kim/"
           }
         }
       ]
@@ -140,25 +142,7 @@
       "separateLinks": true,
       "visible": true,
       "id": "projects",
-      "items": [
-        {
-          "id": "v53x81i8s4jcz34ibt4lk58d",
-          "visible": true,
-          "name": "resume-paper",
-          "description": "json포맷을 pdf 이력서로 다운 받을 수 있는 웹사이트.",
-          "date": "2024년 11월 - 현재",
-          "summary": "",
-          "keywords": [
-            "vanilla-extract",
-            "vite",
-            "typescript"
-          ],
-          "url": {
-            "label": "",
-            "href": "https://github.com/minju25kim/resume-paper"
-          }
-        }
-      ]
+      "items": []
     },
     "skills": {
       "name": "테크 스택",
@@ -179,7 +163,8 @@
             "Styled-components",
             "Storybook",
             "TailwindCSS",
-            "vanilla-extract"
+            "vanilla-extract",
+            "MUI"
           ]
         },
         {
@@ -188,12 +173,7 @@
           "name": "Javascript",
           "description": "",
           "level": 0,
-          "keywords": [
-            "React",
-            "Typescript",
-            "Node.js",
-            "Express"
-          ]
+          "keywords": ["React", "Typescript", "Node.js", "Express","Next.js"]
         },
         {
           "id": "d0vebxgpjg7mlylmc63i8zw2",
@@ -201,14 +181,7 @@
           "name": "DevOps",
           "description": "",
           "level": 0,
-          "keywords": [
-            "Git",
-            "GitHub Actions",
-            "Docker",
-            "npm",
-            "yarn",
-            "vite"
-          ]
+          "keywords": ["Git", "GitHub Actions", "Docker"]
         },
         {
           "id": "random_id",
@@ -216,11 +189,7 @@
           "name": "DB",
           "description": "",
           "level": 0,
-          "keywords": [
-            "MongoDB",
-            "SQLite",
-            "PostgreSQL"
-          ]
+          "keywords": ["MongoDB", "SQLite", "PostgreSQL"]
         },
         {
           "id": "rxmvmyrxfmkmgtuotphddipg",
@@ -228,11 +197,7 @@
           "name": "비즈니스 도구",
           "description": "",
           "level": 0,
-          "keywords": [
-            "Jira",
-            "Microsoft teams",
-            "Figma"
-          ]
+          "keywords": ["Jira", "Microsoft teams", "Figma"]
         }
       ]
     },
