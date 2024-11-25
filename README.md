@@ -3,7 +3,7 @@
 ## why
 - 이력서 pdf파일이 필요할 때
 - json포맷의 이력을 수정하고 싶을 때
-- a4에서 이력서가 어떻게 보일지 궁금 할 때
+- 프린트한 이력서가 어떻게 보일지 궁금 할 때
 - 영어/한국어 2가지 버젼의 이력서가 모두 필요할 때
 - 이력서의 링크를 공유해야 할 때
 
@@ -42,6 +42,8 @@
 - theme버튼을 걷어냄.
 - 모바일 버전은 추후 추가.
 - json upload 기능은 추가하지 않고, 내 이력서를 보여주고 링크를 공유하는 것에 초점을 맞춤.
+- aws ecr에 docker image를 업로드 할 수 있지만 ec2에서 자동으로 새로운 image를 반영한 container를 생성할 수 없음.
+  
 
 ## how to run
 
@@ -55,12 +57,13 @@ $ npm run dev
 ## Built With
 
 - vite
-- typescript
-- vanilla-extract
+- vanilla-typescript
+- vanilla-extract(css)
 
 ## JSON format
 
-- use this json format 
+<details>
+<summary>JSON 보기/접기</summary>
 
 ```json
 {
@@ -245,6 +248,7 @@ $ npm run dev
     "custom": {}
   }
 }
+</details>
 ```
 
 ## License
